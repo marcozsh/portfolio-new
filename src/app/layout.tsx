@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { comfortaa } from "./fonts";
 import CustomNavbar from "@/components/nav/navbar";
 import Footer from "@/components/footer/footer";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const urlHost = process.env.PAGE_URL || "";
@@ -43,6 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <Analytics />
       <body
         className={`${comfortaa.className} antialiased max-w-[1200px] mx-auto bg-animated`}
       >
