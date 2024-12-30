@@ -29,7 +29,7 @@ export default function MenuNav() {
           <Link
             key={link.name}
             href={link.href}
-            className={`text-center w-full block text-[1.2rem] leading-[5rem] text-white hover:text-primary hover:transition-colors hover:duration-300 hover:ease-in-out`}
+            className={`text-center w-full block text-[1.2rem] leading-[5rem] text-white hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out`}
           >
             <CodeBrackets text={link.name} />
           </Link>

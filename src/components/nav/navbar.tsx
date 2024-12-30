@@ -87,7 +87,7 @@ export default function CustomNavbar() {
         </div>
       </div>
       {isNavVisible && (
-        <div className="flex flex-col absolute backdrop-blur-[200px] bg-black-40 rounded top-16 w-full z-10 lg:hidden">
+        <div className="flex flex-col absolute backdrop-blur-[200px] bg-black-40 rounded top-16 w-full z-10 xl:hidden">
           <MenuNav />
         </div>
       )}
