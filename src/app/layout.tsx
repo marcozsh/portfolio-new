@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: title,
     description: description,
-    images: [{ url: "/opengraphimg.webp", alt: title }],
+    images: [{ url: "/opengraphimage.png", alt: title }],
     url: urlHost,
     type: "website",
     countryName: "Chile",

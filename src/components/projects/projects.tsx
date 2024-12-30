@@ -8,7 +8,7 @@ export default function Projects() {
       id="projects"
       className="landing-section flex flex-col justify-between mt-44"
     >
-      <div className="flex justify-center lg:mb-20">
+      <div className="flex justify-center xl:mb-20">
         <h2 className="text-4xl font-bold">
           <CodeBrackets text="Proyectos" />
         </h2>

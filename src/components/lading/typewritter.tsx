@@ -1,20 +1,25 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
 
-export default function CustomTypeWritter() {
+
+type TypeAnimationProps = {
+	text: string;
+};
+
+export default function CustomTypeWritter({ text }: TypeAnimationProps) {
   return (
     <TypeAnimation
       sequence={[
-        "¡Hola!",
+        text,
         500,
         "",
         1000,
-        "¡Hola!",
+	text,
         1000,
       ]}
       wrapper="span"
       speed={10}
-      style={{ fontSize: "3rem", display: "inline-block" }}
+      style={{ display: "inline-block" }}
       repeat={Infinity}
     />
   );
