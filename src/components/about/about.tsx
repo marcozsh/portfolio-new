@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about-me"
-      className="flex justify-center lg:justify-between my-32 text-center m-4 text-pretty pb-10 md:text-start lg:m-0"
+      className="flex justify-center lg:justify-between my-32 text-center m-4 text-pretty pb-10 md:text-start xl:m-0"
     >
       <div className="flex flex-col justify-center">
         <h1 className="text-5xl font-bold flex flex-col gap-3">
@@ -30,7 +30,7 @@ export default function About() {
         </div>
       </div>
       <div className="lg:flex flex-col gap-3 hidden">
-        <img loading="lazy" src="/img-2.webp" className="w-[550px]" />
+        <img loading="lazy" src="/img-2.webp" className="w-[550px]" alt="about me image"/>
       </div>
     </section>
   );

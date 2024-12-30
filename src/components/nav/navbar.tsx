@@ -19,13 +19,13 @@ export default function CustomNavbar() {
   };
   return (
     <>
-      <nav className="lg:flex justify-between mt-4 top-2 sticky backdrop-blur-[600px] rounded-full z-50 hidden">
+      <nav className="xl:flex justify-between mt-4 top-2 sticky backdrop-blur-[600px] rounded-full z-50 hidden">
         <div className="flex justify-between w-full p-4 mx-auto">
           <Link
             href="/"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text="Marcozsh" />
+            <CodeBrackets text="MP" />
           </Link>
         </div>
         <div className="flex justify-between w-full p-4 mx-auto text-white">
@@ -47,8 +47,8 @@ export default function CustomNavbar() {
           >
             <CodeBrackets text="Sobre mí" />
           </Link>
-	 <Link
-	    href="mailto:marc.penar@outlook.cl"
+          <Link
+            href="mailto:marc.penar@outlook.cl"
             target="_blank"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
@@ -68,7 +68,7 @@ export default function CustomNavbar() {
           <Tooltip id="my-tooltip" place="left" />
         </div>
       </nav>
-      <div className="lg:hidden">
+      <div className="xl:hidden">
         <div className="flex absolute backdrop-blur-[200px] bg-black-40 rounded top-4 right-7 z-10">
           <FaList className="w-10 h-10 cursor-pointer" onClick={openMenu} />
         </div>
