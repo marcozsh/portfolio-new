@@ -5,8 +5,8 @@ type ProjectCardProps = {
   name: string;
   description: string;
   pageImg: string;
-  links: { link: string; type: number }[];
-  techs: { img: string }[];
+  links?: { link: string; type: number }[];
+  techs?: { img: string }[];
 };
 
 export default function ProjectCard({
@@ -25,7 +25,7 @@ export default function ProjectCard({
           <p className="text-custom_gray opacity-[0.6]">{description}</p>
         </div>
         <div className="flex flex-row gap-3 justify-center xl:justify-start">
-          {links.map((link, index) =>
+          {links?.map((link, index) =>
             link.type === 1 ? (
               <Link key={index} href={link.link} target="_blank">
                 <GitHubSVG />
@@ -38,7 +38,7 @@ export default function ProjectCard({
           )}
         </div>
         <div className="flex flex-row flex-wrap gap-3 justify-center xl:justify-start">
-          {techs.map((tech, index) => (
+          {techs?.map((tech, index) => (
             <img key={index} src={tech.img} className="rounded" alt="tech image" />
           ))}
         </div>

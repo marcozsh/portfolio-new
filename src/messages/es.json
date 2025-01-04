@@ -1,13 +1,75 @@
 {
-  "header": {
-    "project": "Projectos",
-    "experience": "Experiencia",
-    "about": "Sobre mí",
-    "contact": "Contáctame"
-  },
-  "landing": {
-    "hi_message": "¡Hola!",
-    "name": "Soy",
-    "subtitle": "Desarrollador Full Stack"
-  }
+    "LocaleLayout": {
+        "title": "Marco Peña | Desarrollador Full Stack"
+    },
+    "redirect": {
+        "redirect": "/es/not-found"
+    },
+    "NotFoundPage": {
+        "message": "La página que buscas no existe.",
+        "fallback": "Volver al inicio"
+    },
+    "header": {
+        "project": "Projectos",
+        "experience": "Experiencia",
+        "about": "Sobre mí",
+        "contact": "Contáctame",
+        "start_animation": "Iniciar",
+        "stop_animation": "Parar",
+        "animation": "animación de fondo"
+    },
+    "landing": {
+        "hi_message": "¡Hola!",
+        "name": "Soy",
+        "subtitle": "Desarrollador Full Stack"
+    },
+    "projects": {
+        "header": "Proyectos",
+        "img_to_text": {
+            "name": "Convertir Imagen a Texto",
+            "description": "App para convertir imagenes a texto, soporta multiples tipo de imágenes y está potenciado por Tesseract y su capacidad de detectar más de 100 idiomas. También cuenta con la funcionalidad de login, para que puedas guardar el log de las transformaciones a texto que se realizan.",
+            "pageImg": "/imgtotext.webp",
+            "link_1_url": "https://github.com/marcozsh/img-to-text",
+            "link_1_type": "1",
+            "link_2_url": "https://img-to-text-eta.vercel.app/home",
+            "link_2_type": "2",
+            "tech_1": "ts",
+            "tech_2": "nextjs",
+            "tech_3": "tailwind",
+            "tech_4": "postgres"
+        },
+        "computecnicos": {
+            "name": "Computecnicos",
+            "description": "Lading page para un servicio técnico de computadoras, donde se muestran las calificaciones de los clientes, con formulario de contacto y sistema de ranking de servicios.",
+            "pageImg": "/computecnicos.webp",
+            "link_1_url": "https://github.com/marcozsh/computecnicos",
+            "link_1_type": "1",
+            "link_2_url": "https://computecnicos.vercel.app/home",
+            "link_2_type": "2",
+            "tech_1": "ts",
+            "tech_2": "nextjs",
+            "tech_3": "tailwind",
+            "tech_4": "postgres"
+        }
+    },
+    "experience": {
+        "header": "Experiencia",
+        "job_1": {
+            "position": "Equipo de desarrollo de mantenimiento - Desis Ltda",
+            "date": "Junio 2022 - Actualidad",
+            "description": "Área donde me dedico a solventar tickets ingresados por los usuarios reales de la plataforma Facturacion.cl, en la cual indican errores, mejoras o flujos no contemplados en la misma. Las correcciones se emplean con las tecnologías PHP, JavaScript, HTML, CSS y PostgreSQL."
+        },
+        "job_2": {
+            "position": "Equipo de desarrollo - Desis Ltda",
+            "date": "Febrero 2022 - Junio 2022",
+            "description": "Área donde me dedicaba a desarrollar nuevas funcionalidades según los requerimientos de la empresa, en esta etapa documentaba y desarrollaba estos mismos. Utilizaba las tecnologías tales como PHP, JavaScript, HTML, CSS y PostgreSQL."
+        }
+    },
+    "about": {
+        "header": "Sobre Mí",
+        "description": "<p> Me llamo Marco Peña, chileno graduado de Ingeniería de software, cuento con <strong> +2 años de experiencia </strong>en desarrollo web. A lo largo de mi camino desarrollando software, me he dado cuenta de lo importante que es la tecnología y cómo puede mejorar la calidad de vida de las personas. Me encanta aprender cosas nuevas y compartir mis conocimientos con los demás.</p><br /><p>Mi principal objetivo <strong>ayudarte</strong> a crear un producto único y de calidad que cumpla con tus expectativas y necesidades.</p><br /><p>Siéntete libre de contactarme si tienes alguna pregunta o si quieres trabajar conmigo.</p>"
+    },
+    "footer": {
+        "message": "Este sitio fue construido con ❤️"
+    }
 }

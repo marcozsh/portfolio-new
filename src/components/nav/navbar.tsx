@@ -5,9 +5,12 @@ import { Tooltip } from "react-tooltip";
 import { useState } from "react";
 import MenuNav from "./menu-nav";
 import CodeBrackets from "../code-brackets/code-brackets";
+import { useTranslations } from "next-intl";
 export default function CustomNavbar() {
   const [isBackGround, setIsBackGround] = useState<boolean>(true);
   const [isNavVisible, setIsNavVisible] = useState<boolean>(false);
+
+  const t = useTranslations("header");
 
   const stopBackGround = () => {
     document.body.classList.toggle("bg-animated");
@@ -30,29 +33,29 @@ export default function CustomNavbar() {
         </div>
         <div className="flex justify-between w-full p-4 mx-auto text-white">
           <Link
-            href={`/#projectos`}
+            href="/#projects"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text="Projectos" />
+            <CodeBrackets text={t("project")} />
           </Link>
           <Link
             href="/#experience"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text="Experiencia" />
+            <CodeBrackets text={t("experience")} />
           </Link>
           <Link
             href="/#about-me"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text="Sobre mí" />
+            <CodeBrackets text={t("about")} />
           </Link>
           <Link
             href="mailto:marc.penar@outlook.cl"
             target="_blank"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text="Contáctame" />
+            <CodeBrackets text={t("contact")} />
           </Link>
 
           <button onClick={stopBackGround}>
@@ -60,8 +63,8 @@ export default function CustomNavbar() {
               className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
               data-tooltip-id="my-tooltip"
               data-tooltip-content={`${
-                isBackGround ? "Detener" : "Iniciar"
-              } animación de fondo`}
+                isBackGround ? t("stop_animation") : t("start_animation")
+              } ${t("animation")}`}
               data-tooltip-place="right"
             />
           </button>
@@ -78,8 +81,8 @@ export default function CustomNavbar() {
               className="w-10 h-10 absolute left-7 hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
               data-tooltip-id="my-tooltip"
               data-tooltip-content={`${
-                isBackGround ? "Detener" : "Iniciar"
-              } animación de fondo`}
+                isBackGround ? t("stop_animation") : t("start_animation")
+              } ${t("animation")}`}
               data-tooltip-place="right"
             />
           </button>
