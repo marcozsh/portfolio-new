@@ -1,0 +1,75 @@
+{
+    "LocaleLayout": {
+        "title": "Marco Peña | Full Stack Developer"
+    },
+    "redirect": {
+        "redirect": "/en/not-found"
+    },
+    "NotFoundPage": {
+        "message": "The page you are looking for does not exist.",
+        "fallback": "Go back to the home page"
+    },
+    "header": {
+        "project": "Projects",
+        "experience": "Experience",
+        "about": "About Me",
+        "contact": "Contact Me",
+        "start_animation": "Start",
+        "stop_animation": "Stop",
+        "animation": "background animation"
+    },
+    "landing": {
+        "hi_message": "¡Hi!",
+        "name": "I'm",
+        "subtitle": "Full Stack Developer"
+    },
+    "projects": {
+        "header": "Projects",
+        "img_to_text": {
+            "name": "Convertir Imagen a Texto",
+            "description": "App to convert images to text, supports multiple types of images and is powered by Tesseract and its ability to detect more than 100 languages. It also has login functionality, so you can save the log of the transformations to text that are performed.",
+            "pageImg": "/imgtotext.webp",
+            "link_1_url": "https://github.com/marcozsh/img-to-text",
+            "link_1_type": "1",
+            "link_2_url": "https://img-to-text-eta.vercel.app/home",
+            "link_2_type": "2",
+            "tech_1": "ts",
+            "tech_2": "nextjs",
+            "tech_3": "tailwind",
+            "tech_4": "postgres"
+        },
+        "computecnicos": {
+            "name": "Computecnicos",
+            "description": "Lading page for a computer technical service, showing customer ratings, with contact form and service ranking system.",
+            "pageImg": "/computecnicos.webp",
+            "link_1_url": "https://github.com/marcozsh/computecnicos",
+            "link_1_type": "1",
+            "link_2_url": "https://computecnicos.vercel.app/home",
+            "link_2_type": "2",
+            "tech_1": "ts",
+            "tech_2": "nextjs",
+            "tech_3": "tailwind",
+            "tech_4": "postgres"
+        }
+    },
+    "experience": {
+        "header": "Experience",
+        "job_1": {
+            "position": "Maintenance development team - Desis Ltda",
+            "date": "June 2022 - Present",
+            "description": "Area where I am dedicated to solve tickets entered by real users of the Facturacion.cl platform, in which they indicate errors, improvements or flows not contemplated in the same. The corrections are used with PHP, JavaScript, HTML, CSS and PostgreSQL technologies."
+        },
+        "job_2": {
+            "position": "Development team - Desis Ltda",
+            "date": " February 2022 - June 2022",
+            "description": "Area where I was dedicated to develop new functionalities according to the requirements of the company, at this stage I documented and developed them. I used technologies such as PHP, JavaScript, HTML, CSS and PostgreSQL."
+        }
+    },
+    "about": {
+        "header": "About Me",
+        "description": "<p> My name is Marco Peña, Chilean graduated in Software Engineering, I have  <strong> +2 years of experience </strong>in web development. Along my way developing software, I have realized how important technology is and how it can improve people's quality of life. I love learning new things and sharing my knowledge with others</p><br /><p>My main goal is to <strong>help</strong> you create a unique and quality product that meets your expectations and needs.</p><br /><p>Feel free to contact me if you have any questions or if you want to work with me.</p>"
+    },
+    "footer": {
+        "message": "This site was built with ❤️"
+    }
+}

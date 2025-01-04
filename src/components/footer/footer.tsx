@@ -1,11 +1,13 @@
 import Link from "next/link";
 import {FiMail} from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
   return (
     <>
       <footer className="text-center flex flex-col pt-10 gap-3 pb-5">
-        <p>Este sitio fue construido con ❤️</p>
+        <p>{t('message')}</p>
         <div
           id="contact"
           className="flex flex-row pt-10 lg:pt-5 justify-center gap-2"
