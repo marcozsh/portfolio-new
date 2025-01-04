@@ -1,30 +1,20 @@
 "use client";
 import Link from "next/link";
 import CodeBrackets from "../code-brackets/code-brackets";
+import { useTranslations } from "next-intl";
+
 export default function MenuNav() {
-  const links = [
-    {
-      name: "Projectos",
-      href: "/#projects",
-    },
-    {
-      name: "Experiencia",
-      href: "/#experience",
-    },
-    {
-      name: "Sobre mí",
-      href: "/#about-me",
-    },
+  const t = useTranslations("header_mobile");
 
-    {
-      name: "Contáctame",
-      href: "/#contact-me",
-    },
-  ];
+  const links = ["projects", "experience", "about", "contact"];
 
+  const header = links.map((key) => ({
+    name: t(`${key}.name`),
+    href: t(`${key}.href`),
+  }));
   return (
     <>
-      {links.map((link) => {
+      {header.map((link) => {
         return (
           <Link
             key={link.name}
