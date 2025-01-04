@@ -1,0 +1,13 @@
+{
+  "header": {
+    "project": "Projectos",
+    "experience": "Experiencia",
+    "about": "Sobre mí",
+    "contact": "Contáctame"
+  },
+  "landing": {
+    "hi_message": "¡Hola!",
+    "name": "Soy",
+    "subtitle": "Desarrollador Full Stack"
+  }
+}

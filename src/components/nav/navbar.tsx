@@ -30,7 +30,7 @@ export default function CustomNavbar() {
         </div>
         <div className="flex justify-between w-full p-4 mx-auto text-white">
           <Link
-            href="/#projects"
+            href={`/#projectos`}
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
             <CodeBrackets text="Projectos" />
