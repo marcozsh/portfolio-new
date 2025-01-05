@@ -39,7 +39,7 @@ export default function ProjectCard({
         </div>
         <div className="flex flex-row flex-wrap gap-3 justify-center xl:justify-start">
           {techs?.map((tech, index) => (
-            <img key={index} src={tech.img} className="rounded" alt="tech image" />
+            <img key={index} src={tech.img} className="rounded" alt="tech image" loading="lazy" decoding="async" />
           ))}
         </div>
       </div>

@@ -17,7 +17,8 @@ export default function About() {
       </div>
       <div className="lg:flex flex-col gap-3 hidden">
         <img
-          loading="lazy"
+	loading="lazy"
+	decoding="async"
           src="/img-2.webp"
           className="w-[550px]"
           alt="about me image"
