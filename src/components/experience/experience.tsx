@@ -25,7 +25,7 @@ export default function Experience() {
         </h2>
       </div>
       <div className="flex flex-row justify-center pt-14 m-5 xl:m-0 text-pretty items-center">
-        <TimeLineComponent details={details} />;
+        <TimeLineComponent details={details} />
       </div>
     </section>
   );
