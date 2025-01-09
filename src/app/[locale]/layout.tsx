@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">) {
 export default async function RootLayout({
   children,
   params,
-}: Readonly<Props>) {
+}: Props) {
   const { locale } = await params;
   unstable_setRequestLocale(locale);
   if (!routing.locales.includes(locale as any)) {
@@ -85,7 +85,6 @@ export default async function RootLayout({
       <body
         className={`${manrope.className} antialiased max-w-[1200px] mx-auto`}
       >
-        
         <NextIntlClientProvider messages={messages}>
           <CustomNavbar />
           {children}
