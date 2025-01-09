@@ -1,21 +1,13 @@
 "use client";
 import Link from "next/link";
-import { FaCode, FaList } from "react-icons/fa";
-import { Tooltip } from "react-tooltip";
+import { FaList } from "react-icons/fa";
 import { useState } from "react";
 import MenuNav from "./menu-nav";
-import CodeBrackets from "../code-brackets/code-brackets";
 import { useTranslations } from "next-intl";
 export default function CustomNavbar() {
-  const [isBackGround, setIsBackGround] = useState<boolean>(true);
   const [isNavVisible, setIsNavVisible] = useState<boolean>(false);
 
   const t = useTranslations("header");
-
-  const stopBackGround = () => {
-    document.body.classList.toggle("bg-animated");
-    setIsBackGround(!isBackGround);
-  };
 
   const openMenu = () => {
     setIsNavVisible(!isNavVisible);
@@ -23,70 +15,37 @@ export default function CustomNavbar() {
   return (
     <>
       <nav className="xl:flex justify-between mt-4 top-2 sticky backdrop-blur-[600px] rounded-full z-50 hidden">
-        <div className="flex justify-between w-full p-4 mx-auto">
-          <Link
-            href="/"
-            className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-          >
-            <CodeBrackets text="MP" />
-          </Link>
-        </div>
-        <div className="flex justify-between w-full p-4 mx-auto text-white">
+                <div className="flex justify-between w-full p-4 mx-auto text-white">
           <Link
             href="/#projects"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text={t("project")} />
+            {t("project")}
           </Link>
           <Link
             href="/#experience"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text={t("experience")} />
+            {t("experience")}
           </Link>
           <Link
             href="/#about-me"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text={t("about")} />
+            {t("about")}
           </Link>
           <Link
             href="mailto:marc.penar@outlook.cl"
             target="_blank"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
           >
-            <CodeBrackets text={t("contact")} />
+            {t("contact")}
           </Link>
-
-          <button onClick={stopBackGround}>
-            <FaCode
-              className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content={`${
-                isBackGround ? t("stop_animation") : t("start_animation")
-              } ${t("animation")}`}
-              data-tooltip-place="right"
-            />
-          </button>
-          <Tooltip id="my-tooltip" place="left" />
         </div>
       </nav>
       <div className="xl:hidden">
         <div className="flex absolute backdrop-blur-[200px] bg-black-40 rounded top-4 right-7 z-10">
           <FaList className="w-10 h-10 cursor-pointer" onClick={openMenu} />
-        </div>
-        <div className="top-4hidden">
-          <button onClick={stopBackGround}>
-            <FaCode
-              className="w-10 h-10 absolute left-7 hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-              data-tooltip-id="my-tooltip"
-              data-tooltip-content={`${
-                isBackGround ? t("stop_animation") : t("start_animation")
-              } ${t("animation")}`}
-              data-tooltip-place="right"
-            />
-          </button>
-          <Tooltip id="my-tooltip" place="bottom" />
         </div>
       </div>
       {isNavVisible && (

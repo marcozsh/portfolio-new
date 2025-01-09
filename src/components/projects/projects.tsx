@@ -21,7 +21,7 @@ export default function Projects() {
     >
       <div className="flex justify-center xl:mb-20">
         <h2 className="text-4xl font-bold">
-          <CodeBrackets text={t('header')} />
+          <CodeBrackets text={t('header')} showBrackets/>
         </h2>
       </div>
       {keys.map((key) => {
