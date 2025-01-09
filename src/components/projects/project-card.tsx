@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaGithub, FaLink } from "react-icons/fa";
 import CustomButton from "../custom-button/custom-button";
 
@@ -6,6 +7,7 @@ type ProjectCardProps = {
   name: string;
   description: string;
   pageImg: string;
+  linkString: string;
   links?: { link: string; type: number }[];
   techs?: { img: string }[];
 };
@@ -14,21 +16,24 @@ export default function ProjectCard({
   name,
   description,
   pageImg,
+  linkString,
   links,
   techs,
 }: ProjectCardProps) {
   const webLink = links ? links[1].link : " ";
   return (
-    <div className="flex flex-col items-center text-center xl:text-start xl:flex-row m-7 xl:m-0 pb-14">
+    <div className="flex flex-col items-center text-center md:text-start lg:flex-row m-7 xl:m-0 pb-14">
       <Link
         href={webLink}
         target="_blank"
         rel="noopener"
         className="m-8 xl:m-0"
       >
-        <img
+        <Image
           src={pageImg}
-          className="w-[650px] rounded-xl"
+	  width={400}
+	  height={0}
+          className="w-[550px] lg:w-[400px] rounded-xl lg:max-w-fit"
           alt="project card image"
         />
       </Link>
@@ -43,14 +48,14 @@ export default function ProjectCard({
               <CustomButton
                 key={index}
                 icon=<FaGithub />
-                text="Código Fuente"
+                text="GitHub"
                 href={link.link}
               />
             ) : (
               <CustomButton
                 key={index}
                 icon=<FaLink />
-                text="Sitio web"
+                text={linkString}
                 href={link.link}
               />
             ),

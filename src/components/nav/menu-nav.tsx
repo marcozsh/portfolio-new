@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
-import CodeBrackets from "../code-brackets/code-brackets";
 import { useTranslations } from "next-intl";
-
 export default function MenuNav() {
   const t = useTranslations("header_mobile");
 

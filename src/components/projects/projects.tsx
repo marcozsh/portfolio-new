@@ -50,6 +50,7 @@ export default function Projects() {
             name={t(`${key}.name`)}
             description={t(`${key}.description`)}
             pageImg={t(`${key}.pageImg`)}
+	    linkString={t(`link_string`)}
             links={links}
             techs={techs}
           />
