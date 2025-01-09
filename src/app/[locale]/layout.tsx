@@ -23,7 +23,7 @@ const description = `Fullstack Developer, NextJs, JavaScript, HTML, CSS, Tailwin
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 //export const metadata: Metadata = {};
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">) {
 export default async function RootLayout({
   children,
   params,
-}: Props) {
+}: Readonly<Props>) {
   const { locale } = await params;
   unstable_setRequestLocale(locale);
   if (!routing.locales.includes(locale as any)) {
