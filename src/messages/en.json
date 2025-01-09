@@ -13,10 +13,7 @@
     "project": "Projects",
     "experience": "Experience",
     "about": "About Me",
-    "contact": "Contact Me",
-    "start_animation": "Start",
-    "stop_animation": "Stop",
-    "animation": "background animation"
+    "contact": "Contact Me"
   },
   "header_mobile": {
     "projects": {
@@ -39,7 +36,8 @@
   "landing": {
     "hi_message": "¡Hi!",
     "name": "I'm",
-    "subtitle": "Full Stack Developer"
+    "subtitle": "Full Stack Developer",
+    "cv": "/en/cv-marco.pdf"
   },
   "projects": {
     "header": "Projects",
