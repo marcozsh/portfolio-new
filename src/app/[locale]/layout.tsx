@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">) {
     twitter: {
       title: title,
       description: description,
-      images: [{ url: "/img-1.webp", alt: title }],
+      images: [{ url: "/opengraphimage.png", alt: title }],
     },
   };
 }

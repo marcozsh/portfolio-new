@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin, FaFileContract } from "react-icons/fa";
 import CustomTypeWritter from "./typewritter";
 import { useTranslations } from "next-intl";
 import CustomButton from "../custom-button/custom-button";
-import {routing} from "@/i18n/routing";
 export default function Landing() {
   const t = useTranslations("landing");
   return (
