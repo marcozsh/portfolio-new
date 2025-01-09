@@ -1,4 +1,4 @@
-import { comfortaa } from "../fonts";
+import { manrope } from "../fonts";
 import CustomNavbar from "@/components/nav/navbar";
 import Footer from "@/components/footer/footer";
 import { Analytics } from "@vercel/analytics/next";
@@ -23,7 +23,7 @@ const description = `Fullstack Developer, NextJs, JavaScript, HTML, CSS, Tailwin
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 //export const metadata: Metadata = {};
@@ -83,7 +83,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <Analytics />
       <body
-        className={`${comfortaa.className} antialiased max-w-[1200px] mx-auto bg-animated`}
+        className={`${manrope.className} antialiased max-w-[1200px] mx-auto`}
       >
         <NextIntlClientProvider messages={messages}>
           <CustomNavbar />

@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
-import CodeBrackets from "../code-brackets/code-brackets";
 import { useTranslations } from "next-intl";
-
 export default function MenuNav() {
   const t = useTranslations("header_mobile");
 
@@ -21,7 +19,7 @@ export default function MenuNav() {
             href={link.href}
             className={`text-center w-full block text-[1.2rem] leading-[5rem] text-white hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out`}
           >
-            <CodeBrackets text={link.name} />
+            {link.name}
           </Link>
         );
       })}

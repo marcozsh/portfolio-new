@@ -43,6 +43,7 @@
   },
   "projects": {
     "header": "Proyectos",
+    "link_string": "Código fuente",
     "img_to_text": {
       "name": "Convertir Imagen a Texto",
       "description": "App para convertir imagenes a texto, soporta multiples tipo de imágenes y está potenciado por Tesseract y su capacidad de detectar más de 100 idiomas. También cuenta con la funcionalidad de login, para que puedas guardar el log de las transformaciones a texto que se realizan.",

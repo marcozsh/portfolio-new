@@ -21,7 +21,7 @@ export default function Experience() {
     >
       <div className="flex justify-center xl:mb-20">
         <h2 className="text-4xl font-bold">
-          <CodeBrackets text={t("header")} />
+          <CodeBrackets text={t("header")} showBrackets />
         </h2>
       </div>
       <div className="flex flex-row justify-center pt-14 m-5 xl:m-0 text-pretty items-center">
