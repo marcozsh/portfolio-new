@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaFileContract } from "react-icons/fa";
 import CustomTypeWritter from "./typewritter";
 import { useTranslations } from "next-intl";
 import CustomButton from "../custom-button/custom-button";
+import ImgShape from "./img-shape";
 export default function Landing() {
   const t = useTranslations("landing");
   return (
@@ -27,15 +28,19 @@ export default function Landing() {
             text="Linkedin"
             href="https://www.linkedin.com/in/marcozsh/"
           />
-          <CustomButton
-            icon=<FaFileContract />
-            text="CV"
-            href={`${t("cv")}`}
-          />
+          <CustomButton icon=<FaFileContract /> text="CV" href={`${t("cv")}`} />
         </div>
       </div>
       <div className="xl:flex flex-col gap-3 hidden">
-        <img src="/img-1.webp" className="w-[550px]" alt="landing image" />
+        <ImgShape>
+          <img
+            src="/img-1.webp"
+            className="relative -z-10 translate-y-10"
+            width={550}
+            height={0}
+            alt="landing image"
+          />
+        </ImgShape>
       </div>
     </section>
   );

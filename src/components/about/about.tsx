@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import CodeBrackets from "../code-brackets/code-brackets";
+import ImgShape from "../lading/img-shape";
 export default function About() {
   const t = useTranslations("about");
   return (
@@ -17,13 +18,16 @@ export default function About() {
         ></div>
       </div>
       <div className="lg:flex flex-col gap-3 hidden">
-        <img
+      <ImgShape>
+	<img
           loading="lazy"
           decoding="async"
           src="/img-2.webp"
-          className="w-[550px]"
+          className="relative -z-10 translate-y-10"
           alt="about me image"
         />
+      </ImgShape>
+        
       </div>
     </section>
   );
