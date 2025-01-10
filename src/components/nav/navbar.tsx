@@ -1,9 +1,12 @@
 "use client";
-import Link from "next/link";
 import { FaList } from "react-icons/fa";
 import { useState } from "react";
-import MenuNav from "./menu-nav";
 import { useTranslations } from "next-intl";
+
+import Link from "next/link";
+import MenuNav from "./menu-nav";
+import LocaleSwitcher from "@/components/locale-switcher/locale-switcher";
+
 export default function CustomNavbar() {
   const [isNavVisible, setIsNavVisible] = useState<boolean>(false);
 
@@ -15,7 +18,7 @@ export default function CustomNavbar() {
   return (
     <>
       <nav className="xl:flex justify-between mt-4 top-2 sticky backdrop-blur-[600px] rounded-full z-50 hidden">
-                <div className="flex justify-between w-full p-4 mx-auto text-white">
+        <div className="flex justify-between w-full p-4 mx-auto text-white">
           <Link
             href="/#projects"
             className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
@@ -41,6 +44,7 @@ export default function CustomNavbar() {
           >
             {t("contact")}
           </Link>
+          <LocaleSwitcher />
         </div>
       </nav>
       <div className="xl:hidden">
