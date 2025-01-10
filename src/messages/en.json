@@ -34,7 +34,7 @@
     }
   },
   "landing": {
-    "hi_message": "¡Hi!",
+    "hi_message": "¡Hello!",
     "name": "I'm",
     "subtitle": "Full Stack Developer",
     "cv": "/en/cv-marco.pdf"

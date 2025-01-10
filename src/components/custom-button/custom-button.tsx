@@ -18,8 +18,8 @@ export default function CustomButton({ icon, text, href }: CustomButtonProps) {
       href={href}
       target="_blank"
       className={`button-custom group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 
-	  	after:duration-500 hover:border-neutral-900 duration-500 
-		hover:duration-500 underline underline-offset-2 
+	  	after:duration-300 hover:border-neutral-900 duration-300 
+		hover:duration-300 underline underline-offset-2 
 		hover:underline hover:underline-offset-4 origin-left 
 		hover:decoration-2 hover:text-neutral-300 relative 
 		md:px-4 md:py-2 bg-neutral-900 border text-left p-2 md:p-3 text-gray-50 

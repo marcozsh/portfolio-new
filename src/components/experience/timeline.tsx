@@ -11,10 +11,10 @@ export default function TimeLineComponent({ details }: TimeLineProps) {
           <time className="mb-1 text-sm font-normal leading-none text-custom_gray opacity-[0.6]">
             {detail.date}
           </time>
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-lg font-bold">
             {detail.position}
           </h3>
-          <p className="mb-4 text-base font-normal text-custom_gray opacity-[0.6]">
+          <p className="mb-4 text-base font-normal text-custom_gray">
             {detail.description}
           </p>
         </li>
