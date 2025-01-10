@@ -15,6 +15,10 @@
     "about": "Sobre mí",
     "contact": "Contáctame"
   },
+  "defaultLocale": {
+    "label": "Cambiar Idioma",
+    "locale": "{locale, select , en {EN} es {ES} other {Desconocido}}"
+  },
   "header_mobile": {
     "projects": {
       "name": "Proyectos",

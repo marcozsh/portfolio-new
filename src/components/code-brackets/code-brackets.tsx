@@ -1,6 +1,6 @@
 import { birthstone_bounce } from "@/app/fonts";
 type CodeBracketsType = {
-  text: string;
+  text: string  | React.ReactNode;
   showBrackets?: boolean;
 };
 export default function CodeBrackets({
