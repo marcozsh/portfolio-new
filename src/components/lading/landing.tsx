@@ -16,7 +16,10 @@ export default function Landing() {
         <h1 className="text-6xl font-bold flex-col gap-3 animate-text-gradient inline-flex bg-gradient-to-r from-white to-custom_purple bg-[100%_auto] bg-clip-text leading-tight text-transparent">
           <span>{t("name")} Marco Peña</span>
         </h1>
+	<div className="flex flex-row w-full justify-between text-sm">
         <p className="text-custom_gray mt-5">{t("subtitle")}</p>
+	<p className="text-custom_gray mt-5">{t("available")}</p>
+	</div>
         <div className="flex flex-row gap-5 mt-5">
           <CustomButton
             icon=<FaGithub />

@@ -41,7 +41,9 @@
     "hi_message": "¡Hola!",
     "name": "Soy",
     "subtitle": "Desarrollador Full Stack",
-    "cv": "/es/cv-marco.pdf"
+    "cv": "/es/cv-marco.pdf",
+    "available": "🟢 Disponible para trabajar",
+    "views": "Vistas"
   },
   "projects": {
     "header": "Proyectos",

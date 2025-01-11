@@ -14,6 +14,7 @@ import {
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import LocaleSwitcher from "@/components/locale-switcher/locale-switcher";
+import ViewsCounter from "@/components/page-counter";
 //locale imports
 
 const urlHost = process.env.PAGE_URL;
@@ -98,10 +99,11 @@ export default async function RootLayout({
         </div>
         {/*Background*/}
         <NextIntlClientProvider messages={messages}>
+          <ViewsCounter />
           <CustomNavbar />
-	  <div className="xl:hidden">
-	  <LocaleSwitcher/>
-	  </div>
+          <div className="xl:hidden">
+            <LocaleSwitcher />
+          </div>
           {children}
           <hr
             className={`m-[0] border-custom_purple border-[1px] border-solid w-full opacity-[0.2]`}
