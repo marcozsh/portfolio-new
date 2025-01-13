@@ -47,7 +47,7 @@
   },
   "projects": {
     "header": "Projects",
-    "link_string": "Source code",
+    "link_string": "Web Site",
     "img_to_text": {
       "name": "Img to text Converter",
       "description": "App to convert images to text, supports multiple types of images and is powered by Tesseract and its ability to detect more than 100 languages. It also has login functionality, so you can save the log of the transformations to text that are performed.",
