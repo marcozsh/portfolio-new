@@ -32,5 +32,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/(es|en)/:path*"],
+  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|api/|.*\\.(?:jpg|png|gif|css|js|pdf|webp)$).*)","/", "/(es|en)/:path*",],
 };
