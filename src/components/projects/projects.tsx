@@ -1,17 +1,22 @@
 import ProjectCard from "./project-card";
-import { ts, nextjs, tailwind, postgres } from "@/data/links";
 import CodeBrackets from "@/components/code-brackets/code-brackets";
 import { useTranslations } from "next-intl";
+import {
+  NextJsSvg,
+  TailwindSvg,
+  TypeScriptSvg,
+  PostgresSvg,
+} from "@/data/svgs";
 
 export default function Projects() {
   const t = useTranslations("projects");
   const keys = ["img_to_text", "computecnicos"] as const;
 
   const techMapping = {
-    ts,
-    nextjs,
-    tailwind,
-    postgres,
+    ts: <TypeScriptSvg />,
+    nextjs: <NextJsSvg />,
+    tailwind: <TailwindSvg />,
+    postgres: <PostgresSvg />,
   };
 
   return (
@@ -21,7 +26,7 @@ export default function Projects() {
     >
       <div className="flex justify-center xl:mb-20">
         <h2 className="text-4xl font-bold">
-          <CodeBrackets text={t('header')} showBrackets/>
+          <CodeBrackets text={t("header")} showBrackets />
         </h2>
       </div>
       {keys.map((key) => {
@@ -38,10 +43,10 @@ export default function Projects() {
         const techs = [];
         for (let i = 1; i <= 4; i++) {
           const techKey = t(`${key}.tech_${i}`);
-          if (techKey && techMapping[techKey as keyof typeof techMapping]) {
-            techs.push({
-              img: techMapping[techKey as keyof typeof techMapping],
-            });
+          const TechComponent =
+            techMapping[techKey as keyof typeof techMapping];
+          if (TechComponent) {
+            techs.push(TechComponent);
           }
         }
         return (
@@ -50,7 +55,7 @@ export default function Projects() {
             name={t(`${key}.name`)}
             description={t(`${key}.description`)}
             pageImg={t(`${key}.pageImg`)}
-	    linkString={t(`link_string`)}
+            linkString={t(`link_string`)}
             links={links}
             techs={techs}
           />

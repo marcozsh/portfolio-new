@@ -9,7 +9,7 @@ type ProjectCardProps = {
   pageImg: string;
   linkString: string;
   links?: { link: string; type: number }[];
-  techs?: { img: string }[];
+  techs?: React.ReactNode[];
 };
 
 export default function ProjectCard({
@@ -31,8 +31,8 @@ export default function ProjectCard({
       >
         <Image
           src={pageImg}
-	  width={400}
-	  height={0}
+          width={400}
+          height={0}
           className="w-[550px] lg:w-[400px] rounded-xl lg:max-w-fit"
           alt="project card image"
         />
@@ -62,16 +62,16 @@ export default function ProjectCard({
           )}
         </div>
         <div className="flex flex-row flex-wrap gap-3 justify-center xl:justify-start">
-          {techs?.map((tech, index) => (
-            <img
+          {/*<img
               key={index}
               src={tech.img}
               className="rounded"
               alt="tech image"
               loading="lazy"
               decoding="async"
-            />
-          ))}
+	      height={28}
+            />*/}
+          {techs?.map((tech, index) => tech)}
         </div>
       </div>
     </div>
