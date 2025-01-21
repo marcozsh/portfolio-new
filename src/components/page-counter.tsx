@@ -12,7 +12,6 @@ export default function ViewsCounter() {
     const fetchViews = async () => {
       const res = await fetch("/api/views");
       const data = await res.json();
-      console.log("data", data.views[0].views);
       setViews(data.views[0].views || 0);
     };
 
