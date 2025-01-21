@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
   try {
     const { error } = await supabase.rpc("increment_views");
     if (error) {
-      console.log(error);
       throw error;
     }
     return NextResponse.json({ success: true });
