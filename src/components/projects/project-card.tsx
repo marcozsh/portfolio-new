@@ -71,7 +71,7 @@ export default function ProjectCard({
               decoding="async"
 	      height={28}
             />*/}
-          {techs?.map((tech, index) => tech)}
+          {techs?.map((tech, index) => <div key={index}>{tech}</div>)}
         </div>
       </div>
     </div>
