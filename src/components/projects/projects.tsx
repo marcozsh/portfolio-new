@@ -58,6 +58,7 @@ export default function Projects() {
             linkString={t(`link_string`)}
             links={links}
             techs={techs}
+	    alt={t(`${key}.alt`)}
           />
         );
       })}
