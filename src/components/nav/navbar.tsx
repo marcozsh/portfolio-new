@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 
 import Link from "next/link";
 import MenuNav from "./menu-nav";
-import LocaleSwitcher from "@/components/locale-switcher/locale-switcher";
 
 export default function CustomNavbar() {
   const [isNavVisible, setIsNavVisible] = useState<boolean>(false);
@@ -44,7 +43,6 @@ export default function CustomNavbar() {
           >
             {t("contact")}
           </Link>
-          <LocaleSwitcher />
         </div>
       </nav>
       <div className="xl:hidden">

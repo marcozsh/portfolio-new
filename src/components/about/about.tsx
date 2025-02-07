@@ -24,7 +24,7 @@ export default function About() {
           decoding="async"
           src="/img-2.webp"
           className="relative -z-10 translate-y-10"
-          alt="about me image"
+          alt="Marco Peña's profile picture about section"
         />
       </ImgShape>
         
