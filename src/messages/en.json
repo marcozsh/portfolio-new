@@ -80,14 +80,18 @@
   "experience": {
     "header": "Experience",
     "job_1": {
-      "position": "Maintenance development team - Desis Ltda",
+      "position": "Maintenance development team",
       "date": "June 2022 - Present",
-      "description": "Area where I am dedicated to solve tickets entered by real users of the Facturacion.cl platform, in which they indicate errors, improvements or flows not contemplated in the same. The corrections are used with PHP, JavaScript, HTML, CSS and PostgreSQL technologies."
+      "description": "Area where I am dedicated to solve tickets entered by real users of the Facturacion.cl platform, in which they indicate errors, improvements or flows not contemplated in the same. The corrections are used with PHP, JavaScript, HTML, CSS and PostgreSQL technologies.",
+      "companyLink": "https://www.facturacion.cl/",
+      "company": "Desis Ltda"
     },
     "job_2": {
-      "position": "Development team - Desis Ltda",
+      "position": "Development team",
       "date": " February 2022 - June 2022",
-      "description": "Area where I was dedicated to develop new functionalities according to the requirements of the company, at this stage I documented and developed them. I used technologies such as PHP, JavaScript, HTML, CSS and PostgreSQL."
+      "description": "Area where I was dedicated to develop new functionalities according to the requirements of the company, at this stage I documented and developed them. I used technologies such as PHP, JavaScript, HTML, CSS and PostgreSQL.",
+      "companyLink": "https://www.facturacion.cl/",
+      "company": "Desis Ltda"
     }
   },
   "about": {

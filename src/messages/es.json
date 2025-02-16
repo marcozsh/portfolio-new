@@ -80,14 +80,18 @@
   "experience": {
     "header": "Experiencia",
     "job_1": {
-      "position": "Equipo de desarrollo de mantenimiento - Desis Ltda",
+      "position": "Equipo de desarrollo de mantenimiento",
       "date": "Junio 2022 - Actualidad",
-      "description": "Área donde me dedico a solventar tickets ingresados por los usuarios reales de la plataforma Facturacion.cl, en la cual indican errores, mejoras o flujos no contemplados en la misma. Las correcciones se emplean con las tecnologías PHP, JavaScript, HTML, CSS y PostgreSQL."
+      "description": "Área donde me dedico a solventar tickets ingresados por los usuarios reales de la plataforma Facturacion.cl, en la cual indican errores, mejoras o flujos no contemplados en la misma. Las correcciones se emplean con las tecnologías PHP, JavaScript, HTML, CSS y PostgreSQL.",
+      "companyLink": "https://www.facturacion.cl/",
+      "company": "Desis Ltda"
     },
     "job_2": {
-      "position": "Equipo de desarrollo - Desis Ltda",
+      "position": "Equipo de desarrollo",
       "date": "Febrero 2022 - Junio 2022",
-      "description": "Área donde me dedicaba a desarrollar nuevas funcionalidades según los requerimientos de la empresa, en esta etapa documentaba y desarrollaba estos mismos. Utilizaba las tecnologías tales como PHP, JavaScript, HTML, CSS y PostgreSQL."
+      "description": "Área donde me dedicaba a desarrollar nuevas funcionalidades según los requerimientos de la empresa, en esta etapa documentaba y desarrollaba estos mismos. Utilizaba las tecnologías tales como PHP, JavaScript, HTML, CSS y PostgreSQL.",
+      "companyLink": "https://www.facturacion.cl/",
+      "company": "Desis Ltda"
     }
   },
   "about": {
