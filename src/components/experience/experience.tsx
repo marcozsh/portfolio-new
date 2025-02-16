@@ -11,6 +11,8 @@ export default function Experience() {
     position: t(`${key}.position`),
     date: t(`${key}.date`),
     description: t(`${key}.description`),
+    companyLink: t(`${key}.companyLink`),
+    company: t(`${key}.company`),
   }));
 
 

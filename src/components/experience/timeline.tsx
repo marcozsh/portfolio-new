@@ -1,5 +1,13 @@
+import Link from "next/link";
+
 type TimeLineProps = {
-  details: { position: string; date: string; description: string }[];
+  details: {
+    position: string;
+    date: string;
+    description: string;
+    companyLink: string;
+    company: string;
+  }[];
 };
 
 export default function TimeLineComponent({ details }: TimeLineProps) {
@@ -12,7 +20,15 @@ export default function TimeLineComponent({ details }: TimeLineProps) {
             {detail.date}
           </time>
           <h3 className="text-lg font-bold">
-            {detail.position}
+            {detail.position} -
+            <Link
+              className="underline hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
+              href={detail.companyLink}
+	      target="_blank"
+            >
+              {" "}
+              {detail.company}
+            </Link>
           </h3>
           <p className="mb-4 text-base font-normal text-custom_gray">
             {detail.description}

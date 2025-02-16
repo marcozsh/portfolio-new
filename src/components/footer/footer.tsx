@@ -22,7 +22,7 @@ export default function Footer() {
             marc.penar@outlook.cl
           </Link>
         </div>
-        <p className="underline hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out">
+        <p className="font-bold hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out">
           Marco Peña 2025
         </p>
 	<div className="flex justify-end">
