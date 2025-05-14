@@ -19,7 +19,7 @@ export default function CustomButton({ icon, text, href }: CustomButtonProps) {
         items-center 
         justify-center 
         font-medium 
-        text-white 
+      text-white 
 	border
         rounded-lg
         duration-300 
@@ -27,14 +27,11 @@ export default function CustomButton({ icon, text, href }: CustomButtonProps) {
         active:scale-95
         relative
         overflow-hidden
-
         hover:shadow-[0_0_15px_rgba(255,120,120,0.5)]
-
 	after:z-10 after:w-10 after:h-8 after:relative after:bg-custom_purple
 	after:top-6 after:left-10 after:blur-lg hover:after:animate-pulse
 	group-hover:before:duration-500 group-hover:after:duration-500
 	after:duration-300
-
 	px-4 
 	py-2
 	text-base
