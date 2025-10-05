@@ -48,6 +48,20 @@
   "projects": {
     "header": "Proyectos",
     "link_string": "Sitio Web",
+    "agendapuntosaludconsciente": {
+      "name": "Agenda Punto Salud Consciente",
+      "description": "Sistema integral de gestión para centro de salud que administra citas, pacientes, profesionales y servicios terapéuticos. Incluye reservas online con múltiples métodos de pago, gestión de evaluaciones psicológicas y neuropsicológicas, arriendo de salas para externos, sistema de bonos y validación de pagos con tokens temporales. Características principales: calendario interactivo de citas, gestión de fichas médicas, reportes completos con visualizaciones (horas trabajadas, ingresos, estadísticas), notificaciones automáticas por email, validación y corrección de pagos, aplicación de descuentos flexibles, diferenciación entre atención FONASA y particular, y paginación optimizada para grandes volúmenes de datos.",
+      "pageImg": "/agendapsc.webp",
+      "alt": "Imagen de la interfaz de la aplicación Agenda Punto Salud Consciente",
+      "link_1_url": "",
+      "link_1_type": "",
+      "link_2_url": "https://agendapuntosaludconsciente.cl",
+      "link_2_type": "2",
+      "tech_1": "ts",
+      "tech_2": "nextjs",
+      "tech_3": "tailwind",
+      "tech_4": "postgres"
+    },
     "cuidomisgastos": {
       "name": "Cuido Mis Gastos",
       "description": "Aplicación web para llevar un control de gastos, donde puedes agregar tus gastos y ver un resumen de los mismos. Cuenta con gestión de cuentas, asignación de categorías y personas. El sistema cuenta con login, para que puedas guardar el log de los gastos que realizas. La aplicación está potenciada por Next.js y su capacidad de renderizado del lado del servidor, lo que permite una carga más rápida y una mejor experiencia de usuario.",
@@ -101,6 +115,13 @@
       "company": "Desis Ltda"
     },
     "job_2": {
+      "position": "Desarrollo Full Stack - Freelance",
+      "date": "Junio 2025 - Octubre 2025",
+      "description": "Desarrollo de un sistema integral de gestión para centro de salud que administra citas, pacientes, profesionales y servicios terapéuticos. Página desarrollada en mis tiempos libres para el cliente Punto Salud Consciente. Proyecto realizado con las tecnologías Next.js, TypeScript, Tailwind CSS y PostgreSQL.",
+      "companyLink": "https://agendapuntosaludconsciente.cl/",
+      "company": "Punto Salud Consciente"
+    },
+    "job_3": {
       "position": "Equipo de desarrollo",
       "date": "Febrero 2022 - Junio 2022",
       "description": "Área donde me dedicaba a desarrollar nuevas funcionalidades según los requerimientos de la empresa, en esta etapa documentaba y desarrollaba estos mismos. Utilizaba las tecnologías tales como PHP, JavaScript, HTML, CSS y PostgreSQL.",
@@ -110,7 +131,7 @@
   },
   "about": {
     "header": "Sobre Mí",
-    "description": "<p> Me llamo Marco Peña, chileno graduado de Ingeniería de software, cuento con <strong> +2 años de experiencia </strong>en desarrollo web. A lo largo de mi camino desarrollando software, me he dado cuenta de lo importante que es la tecnología y cómo puede mejorar la calidad de vida de las personas. Me encanta aprender cosas nuevas y compartir mis conocimientos con los demás.</p><br /><p>Mi principal objetivo <strong>ayudarte</strong> a crear un producto único y de calidad que cumpla con tus expectativas y necesidades.</p><br /><p>Siéntete libre de contactarme si tienes alguna pregunta o si quieres trabajar conmigo.</p>"
+    "description": "<p> Me llamo Marco Peña, chileno graduado de Ingeniería de software, cuento con <strong> +3 años de experiencia </strong>en desarrollo web. A lo largo de mi camino desarrollando software, me he dado cuenta de lo importante que es la tecnología y cómo puede mejorar la calidad de vida de las personas. Me encanta aprender cosas nuevas y compartir mis conocimientos con los demás.</p><br /><p>Mi principal objetivo <strong>ayudarte</strong> a crear un producto único y de calidad que cumpla con tus expectativas y necesidades.</p><br /><p>Siéntete libre de contactarme si tienes alguna pregunta o si quieres trabajar conmigo.</p>"
   },
   "footer": {
     "message": "Este sitio fue construido con ❤️"
