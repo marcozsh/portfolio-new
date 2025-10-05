@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function Experience() {
   const t = useTranslations("experience");
 
-  const keys = ["job_1", "job_2"] as const;
+  const keys = ["job_1", "job_2", "job_3"] as const;
 
   const details = keys.map((key) => ({
     position: t(`${key}.position`),

@@ -48,6 +48,20 @@
   "projects": {
     "header": "Projects",
     "link_string": "Web Site",
+    "agendapuntosaludconsciente": {
+      "name": "Agenda Punto Salud Consciente",
+      "description": "Comprehensive health center management system that manages appointments, patients, professionals and therapeutic services. Includes online bookings with multiple payment methods, psychological and neuropsychological assessment management, room rentals for external professionals, voucher system and payment validation with temporary tokens. Key features: interactive appointment calendar, medical records management, complete reports with visualizations (hours worked, revenue, statistics), automated email notifications, payment validation and correction, flexible discount application, differentiation between FONASA and private care, and optimized pagination for large data volumes.",
+      "pageImg": "/agendapsc.webp",
+      "alt": "Image of Agenda Punto Salud Consciente application interface",
+      "link_1_url": "",
+      "link_1_type": "",
+      "link_2_url": "https://agendapuntosaludconsciente.cl",
+      "link_2_type": "2",
+      "tech_1": "ts",
+      "tech_2": "nextjs",
+      "tech_3": "tailwind",
+      "tech_4": "postgres"
+    },
     "cuidomisgastos": {
       "name": "Cuido Mis Gastos",
       "description": "Web application to keep track of expenses, where you can add your expenses and see a summary of them. It has account management, category assignment and people. The system has login, so you can save the log of the expenses you make. The application is powered by Next.js and its server-side rendering capability, which allows faster loading and a better user experience.",
@@ -101,6 +115,13 @@
       "company": "Desis Ltda"
     },
     "job_2": {
+      "position": "Full Stack Development - Freelance",
+      "date": "June 2025 - October 2025",
+      "description": "Development of a comprehensive health center management system that handles appointments, patients, professionals and therapeutic services. Website developed in my free time for the client Punto Salud Consciente. Project built with Next.js, TypeScript, Tailwind CSS and PostgreSQL technologies.",
+      "companyLink": "https://agendapuntosaludconsciente.cl/",
+      "company": "Punto Salud Consciente"
+    },
+    "job_3": {
       "position": "Development team",
       "date": " February 2022 - June 2022",
       "description": "Area where I was dedicated to develop new functionalities according to the requirements of the company, at this stage I documented and developed them. I used technologies such as PHP, JavaScript, HTML, CSS and PostgreSQL.",
@@ -110,7 +131,7 @@
   },
   "about": {
     "header": "About Me",
-    "description": "<p> My name is Marco Peña, Chilean graduated in Software Engineering, I have  <strong> +2 years of experience </strong>in web development. Along my way developing software, I have realized how important technology is and how it can improve people's quality of life. I love learning new things and sharing my knowledge with others</p><br /><p>My main goal is to <strong>help</strong> you create a unique and quality product that meets your expectations and needs.</p><br /><p>Feel free to contact me if you have any questions or if you want to work with me.</p>"
+    "description": "<p> My name is Marco Peña, Chilean graduated in Software Engineering, I have  <strong> +3 years of experience </strong>in web development. Along my way developing software, I have realized how important technology is and how it can improve people's quality of life. I love learning new things and sharing my knowledge with others</p><br /><p>My main goal is to <strong>help</strong> you create a unique and quality product that meets your expectations and needs.</p><br /><p>Feel free to contact me if you have any questions or if you want to work with me.</p>"
   },
   "footer": {
     "message": "This site was built with ❤️"
