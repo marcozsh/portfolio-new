@@ -15,6 +15,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import LocaleSwitcher from "@/components/locale-switcher/locale-switcher";
 import ViewsCounter from "@/components/page-counter";
+import QueryProvider from "@/components/use-query-provider/use-query-provider";
 //locale imports
 
 const urlHost = process.env.PAGE_URL;
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: Omit<Props, "children">) {
     metadataBase: new URL("https://marcozsh.dev/"),
     title: t("title"),
     description: description,
-    keywords: `Programming, NextJs, JavaScript, HTML, CSS, Tailwind, Portfolio, Fullstack, Developer, Web, React, Frontend, Backend, Web, Marcozsh, marcozsh, Marco Peña, 
+    keywords: `Programming, NextJs, JavaScript, HTML, CSS, Tailwind, Portfolio, Fullstack, Developer, Web, React, Frontend, Backend, Web, Marcozsh, marcozsh, Marco Peña,
   Marco Pena, Web developer, Software developer, Software engineer, Software, Engineer, Developer, Fullstack developer, Fullstack, Developer, React developer,`,
     authors: [{ name: "Marco Peña" }],
     robots: "index, follow",
@@ -91,25 +92,27 @@ export default async function RootLayout({
         <div className="fixed left-0 top-0 -z-10 h-full w-full">
           <div className="relative h-full w-full bg-slate-950">
             <div
-              className={`absolute bottom-0 left-0 right-0 top-0 
-		bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] 
+              className={`absolute bottom-0 left-0 right-0 top-0
+		bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)]
 		bg-[size:14px_24px]`}
             ></div>
           </div>
         </div>
         {/*Background*/}
-        <NextIntlClientProvider messages={messages}>
-          <ViewsCounter />
-          <CustomNavbar />
-          <div className="xl:hidden">
-            <LocaleSwitcher />
-          </div>
-          {children}
-          <hr
-            className={`m-[0] border-custom_purple border-[1px] border-solid w-full opacity-[0.2]`}
-          />
-          <Footer />
-        </NextIntlClientProvider>
+        <QueryProvider>
+          <NextIntlClientProvider messages={messages}>
+            <ViewsCounter />
+            <CustomNavbar />
+            <div className="xl:hidden">
+              <LocaleSwitcher />
+            </div>
+            {children}
+            <hr
+              className={`m-[0] border-custom_purple border-[1px] border-solid w-full opacity-[0.2]`}
+            />
+            <Footer />
+          </NextIntlClientProvider>
+        </QueryProvider>
       </body>
     </html>
   );
