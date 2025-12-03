@@ -4,11 +4,12 @@ import { routing } from "./i18n/routing";
 
 const intlMiddleware = createMiddleware(routing);
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const homePath = request.headers.get("referer");
   const path = request.nextUrl.pathname;
 
-  if (homePath?.includes("php") || path?.includes("php")) { //pls stop this, no php for u
+  if (homePath?.includes("php") || path?.includes("php")) {
+    //pls stop this, no php for u
     const redirectUrl = process.env.REDIRECT_URL || "";
     return NextResponse.redirect(new URL(redirectUrl, request.url));
   }
@@ -32,5 +33,9 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon\\.ico|api/|.*\\.(?:jpg|png|gif|css|js|pdf|webp)$).*)","/", "/(es|en)/:path*",],
+  matcher: [
+    "/((?!_next/static|_next/image|favicon\\.ico|api/|.*\\.(?:jpg|png|gif|css|js|pdf|webp)$).*)",
+    "/",
+    "/(es|en)/:path*",
+  ],
 };
