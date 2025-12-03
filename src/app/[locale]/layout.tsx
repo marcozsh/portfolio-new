@@ -8,7 +8,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
-  unstable_setRequestLocale,
+  setRequestLocale,
   getTranslations,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -77,7 +77,7 @@ export default async function RootLayout({
   params,
 }: Readonly<Props>) {
   const { locale } = await params;
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
