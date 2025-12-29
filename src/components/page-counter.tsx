@@ -31,7 +31,7 @@ export default function ViewsCounter() {
       >
         <Eye className="h-4 w-4 text-custom_purple" />
         <span className="font-mono text-white">
-          {isLoading ? <CircularLoader /> : views.toLocaleString()}
+          {isLoading ? <CircularLoader /> : views?.toLocaleString() || "0"}
         </span>
         <span className="text-xs text-[#FF8B8B]">{t("views")}</span>
       </div>
