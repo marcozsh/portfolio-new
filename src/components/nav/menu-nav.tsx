@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 export default function MenuNav() {
-  const t = useTranslations("header_mobile");
+  const t = useTranslations("header");
 
   const links = ["projects", "experience", "about", "contact"];
 
