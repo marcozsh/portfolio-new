@@ -10,7 +10,7 @@ export default function Footer() {
       <footer className="text-center flex flex-col pt-10 gap-3 pb-5 content-end">
         <p>{t("message")}</p>
         <div
-          id="contact"
+          id="contact-me"
           className="flex flex-row pt-10 lg:pt-5 justify-center gap-2"
         >
           <FiMail className="text-2xl" width={30} height={30} />
