@@ -10,7 +10,7 @@ import {
 
 export default function Projects() {
   const t = useTranslations("projects");
-  const keys = ["agendapuntosaludconsciente","cuidomisgastos","img_to_text", "computecnicos"] as const;
+  const keys = ["agendapuntosaludconsciente","img_to_text", "computecnicos"] as const;
 
   const techMapping = {
     ts: <TypeScriptSvg />,

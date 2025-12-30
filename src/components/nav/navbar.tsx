@@ -11,6 +11,13 @@ export default function CustomNavbar() {
 
   const t = useTranslations("header");
 
+  const links = ["projects", "experience", "about", "contact"];
+
+  const header = links.map((key) => ({
+    name: t(`${key}.name`),
+    href: t(`${key}.href`),
+  }));
+
   const openMenu = () => {
     setIsNavVisible(!isNavVisible);
   };
@@ -18,31 +25,17 @@ export default function CustomNavbar() {
     <>
       <nav className="xl:flex justify-between mt-4 top-2 sticky backdrop-blur-[600px] rounded-full z-50 hidden">
         <div className="flex justify-between w-full p-4 mx-auto text-white">
-          <Link
-            href="/#projects"
-            className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-          >
-            {t("project")}
-          </Link>
-          <Link
-            href="/#experience"
-            className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-          >
-            {t("experience")}
-          </Link>
-          <Link
-            href="/#about-me"
-            className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-          >
-            {t("about")}
-          </Link>
-          <Link
-            href="mailto:marc.penar@outlook.cl"
-            target="_blank"
-            className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
-          >
-            {t("contact")}
-          </Link>
+          {header.map((link, index) => {
+            return (
+              <Link
+                key={index}
+                href={link.href}
+                className="hover:text-custom_purple hover:transition-colors hover:duration-300 hover:ease-in-out cursor-pointer"
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </div>
       </nav>
       <div className="xl:hidden">

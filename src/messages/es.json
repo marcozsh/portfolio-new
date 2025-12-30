@@ -9,17 +9,11 @@
     "message": "La página que buscas no existe.",
     "fallback": "Volver al inicio"
   },
-  "header": {
-    "project": "Proyectos",
-    "experience": "Experiencia",
-    "about": "Sobre mí",
-    "contact": "Contáctame"
-  },
   "defaultLocale": {
     "label": "Cambiar Idioma",
     "locale": "{locale, select , en {EN} es {ES} other {Desconocido}}"
   },
-  "header_mobile": {
+  "header": {
     "projects": {
       "name": "Proyectos",
       "href": "/es/#projects"
