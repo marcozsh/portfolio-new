@@ -2,12 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
 import { createServerLogger } from "./lib/logger";
+import { getIp } from "./lib/get-ip";
 
 const intlMiddleware = createMiddleware(routing);
 
 export async function proxy(request: NextRequest) {
+  const logger = createServerLogger("proxy.ts");
+
   const homePath = request.headers.get("referer");
   const path = request.nextUrl.pathname;
+
+  const ip = await getIp();
+
+  logger.info("Proxy middleware received request from ip", { ip });
 
   if (homePath?.includes("php") || path?.includes("php")) {
     //pls stop this, no php for u
@@ -17,7 +24,6 @@ export async function proxy(request: NextRequest) {
 
   const response = await intlMiddleware(request);
 
-  const logger = createServerLogger("proxy.ts");
 
   logger.info("Proxy middleware hit", { path, homePath });
 
