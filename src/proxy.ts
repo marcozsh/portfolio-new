@@ -23,7 +23,7 @@ export async function proxy(request: NextRequest) {
 
   if (!path.startsWith("/api") && !path.match(/\.(jpg|png|gif|css|js|pdf)$/)) {
     try {
-      logger.info("Incrementing view count for path", { path });
+	    logger.info("fetching view count increment from path and origin", { path, origin: request.nextUrl.origin });
       await fetch(`${request.nextUrl.origin}/api/views`, {
         method: "POST",
         headers: {
