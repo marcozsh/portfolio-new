@@ -23,14 +23,20 @@ export async function proxy(request: NextRequest) {
 
   if (!path.startsWith("/api") && !path.match(/\.(jpg|png|gif|css|js|pdf)$/)) {
     try {
-	    logger.info("fetching view count increment from path and origin", { path, origin: request.nextUrl.origin });
-      await fetch(`${request.nextUrl.origin}/api/views`, {
+      logger.info("fetching view count increment from path and origin", { path, origin: request.nextUrl.origin });
+      const increment = await fetch(`${request.nextUrl.origin}/api/views`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           "X-Views-Secret-Key": process.env.VIEWS_SECRET_KEY || "",
         },
       });
+      if (!increment.ok) {
+	const errorText = await increment.text();
+	logger.error("Failed to increment view count", { status: increment.status, statusText: increment.statusText, errorText });
+      } else {
+	logger.info("Successfully incremented view count");
+      }
     } catch (error) {
       logger.error("Error incrementing view count", { error: error instanceof Error ? error.message : String(error) });
     }
