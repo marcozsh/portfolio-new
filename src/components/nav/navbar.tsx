@@ -75,6 +75,11 @@ export default function CustomNavbar() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
+      //Evita que el navbar cambie a vertical en pantallas pequeñas
+      if (window.innerWidth < 1630){
+	return
+      }
+
       if (scrollPosition > 50 && !isVertical && !isAnimating) {
         setIsAnimating(true);
 
