@@ -39,7 +39,7 @@ export default function Landing() {
       <div className="xl:flex flex-col gap-3 hidden">
         <ImgShape>
           <img
-            src="/img-1.webp"
+            src="/me.webp"
             className="relative -z-10 translate-y-10"
             width={550}
             height={0}

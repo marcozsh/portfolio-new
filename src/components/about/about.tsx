@@ -22,7 +22,7 @@ export default function About() {
 	<img
           loading="lazy"
           decoding="async"
-          src="/img-2.webp"
+          src="/me2.webp"
           className="relative -z-10 translate-y-10"
           alt="Marco Peña's profile picture about section"
         />
