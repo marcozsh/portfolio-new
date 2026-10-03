@@ -7,7 +7,7 @@
 </a>
 <div align="center">
 <a href="https://marcozsh.dev/">
-<img src="./public/front-page.png">
+<img src="./public/opengraphimage.png">
 </a>
 <p></p>
 </div>
